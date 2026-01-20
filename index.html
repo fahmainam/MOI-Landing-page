@@ -45,12 +45,13 @@
                     <li class="nav-item ms-2">
                         <a class="btn btn-primary px-4" data-i18n="nav.getStarted" href="#get-started">Get Started</a>
                     </li>
-                    <li id="langToggle"  class="nav-item ms-2">
-                        <a  id="langLabel" class="btn btn-primary px-4" data-i18n="nav.getStarted" href="#get-started">AR</a>
+                   
+                     <li id="langToggle"  class=" language-mobile  ms-2">
+                        <a  id="langLabel" class="btn btn-primary  fw-mediumpx-4" data-i18n="nav.getStarted" >AR</a>
                     </li>
-                    
 
                 </ul>
+                
             </div>
         </div>
     </nav>
@@ -159,99 +160,87 @@
 <div id="servicesCarousel" class="carousel slide services-carousel" data-bs-ride="carousel">
   <div class="carousel-inner">
 
-    <!-- Slide 1 -->
+    <!-- SLIDE 1 -->
     <div class="carousel-item active">
       <div class="container py-4">
-        <div class="row services-row">
-
-          <div class="col service-col feature-item service-item fade-in-up">
+        <div class="services-row">
+          <!-- Card 1 -->
+          <div class="service-col service-item  fade-in-up">
             <div class="service-card">
               <i class="bi bi-car-front"></i>
               <h6>Traffic</h6>
               <p>Vehicle & traffic services</p>
-            <button class="btn btn-outline-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#serviceDetailModal">
-  View Details
-</button>
-
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal-traffic">
+                View Details
+              </button>
             </div>
           </div>
-
-          <div class="col service-col feature-item service-item fade-in-up">
+          <!-- Card 2 -->
+          <div class="service-col service-item fade-in-up">
             <div class="service-card">
               <i class="bi bi-people"></i>
               <h6>Citizens</h6>
               <p>Citizen services</p>
-               <button class="btn btn-outline-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#serviceDetailModal">
-  View Details
-</button>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal-Citizens">
+                View Details
+              </button>
             </div>
           </div>
 
-          <div class="col service-col feature-item service-item fade-in-up">
+          <!-- Card 3 -->
+          <div class="service-col service-item fade-in-up">
             <div class="service-card">
               <i class="bi bi-house-door"></i>
               <h6>Residency</h6>
               <p>Residency permits</p>
-               <button class="btn btn-outline-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#serviceDetailModal">
-  View Details
-</button>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal">
+                View Details
+              </button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
-    <!-- Slide 2 -->
+    <!-- SLIDE 2 -->
     <div class="carousel-item">
       <div class="container py-4">
-        <div class="row services-row">
-
-          <div class="col service-col feature-item service-item fade-in-up">
+        <div class="services-row">
+          <!-- Card 4 -->
+          <div class="service-col service-item fade-in-up">
             <div class="service-card">
               <i class="bi bi-briefcase"></i>
               <h6>Leave Notifications</h6>
               <p>Leave management</p>
-               <button class="btn btn-outline-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#serviceDetailModal">
-  View Details
-</button>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal">
+                View Details
+              </button>
             </div>
           </div>
 
-          <div class="col service-col feature-item service-item fade-in-up">
+          <!-- Card 5 -->
+          <div class="service-col service-item fade-in-up">
             <div class="service-card">
               <i class="bi bi-passport"></i>
               <h6>Visa</h6>
               <p>Visa services</p>
-               <button class="btn btn-outline-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#serviceDetailModal">
-  View Details
-</button>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal">
+                View Details
+              </button>
             </div>
           </div>
 
-          <div class="col service-col feature-item service-item">
+          <!-- Card 6 -->
+          <div class="service-col service-item fade-in-up">
             <div class="service-card">
               <i class="bi bi-geo-alt"></i>
               <h6>National Address</h6>
               <p>Address registration</p>
-                <button class="btn btn-outline-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#serviceDetailModal">
-  View Details
-</button>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal">
+                View Details
+              </button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -269,6 +258,7 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
+
 
 
     </section>
@@ -1116,60 +1106,82 @@
             <div class="footer-shape footer-shape-3"></div>
         </div>
     </footer>
-<div class="modal fade" id="serviceDetailModal" tabindex="-1" aria-hidden="true">
+
+    <!-- Service Detail Modal: Traffic & Vehicle Services -->
+<div class="modal fade" id="serviceDetailModal-traffic" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content service-modal">
 
       <!-- Close -->
-      <button type="button" class="btn-close service-modal-close"
-              data-bs-dismiss="modal"></button>
+      <button type="button"
+              class="btn-close service-modal-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
 
       <div class="modal-body p-0">
         <div class="row g-0">
 
           <!-- LEFT : IMAGE -->
           <div class="col-md-5 service-modal-image">
-            <img src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696f7af1ed05b2bdca775cdd_images.jpg"
-                 alt="Service Image">
+            <img
+              src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696feed448c4dba823a018e4_traffic.png"
+              alt="Government Service">
           </div>
 
           <!-- RIGHT : CONTENT -->
           <div class="col-md-7 p-4 service-modal-content">
 
-            <!-- Title + Rating -->
+            <!-- Title + Status -->
             <div class="d-flex justify-content-between align-items-start mb-2">
-              <h5 class="fw-bold mb-0">House Painting (Eco)</h5>
+              <h5 class="fw-bold mb-0">
+                Traffic & Vehicle Services
+              </h5>
               <span class="service-rating">
-                ⭐ 4.6/5
+                Available
               </span>
             </div>
 
             <p class="text-muted small mb-3">
-              Design • Maintenance
+              Ministry of Interior • Digital Services
             </p>
 
             <!-- Meta Info -->
             <ul class="service-meta">
-              <li><i class="bi bi-calendar"></i> Joined Apr 21, 2024</li>
-              <li><i class="bi bi-geo-alt"></i> London</li>
-              <li><i class="bi bi-clock"></i> Sun–Fri · 9:30 AM – 11 PM</li>
+              <li>
+                <i class="bi bi-card-checklist"></i>
+                Vehicle registration, license renewal, fines
+              </li>
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                State of Qatar
+              </li>
+              <li>
+                <i class="bi bi-clock"></i>
+                24/7 Online Access
+              </li>
             </ul>
 
             <!-- Description -->
             <p class="service-description">
-              Professional eco-friendly house painting services using
-              sustainable materials and modern techniques.
+              Access essential traffic and vehicle-related services digitally.
+              Users can renew vehicle registrations, pay traffic fines,
+              update vehicle ownership details, and manage driving-related
+              requests securely through the platform.
             </p>
 
-            <!-- Price + CTA -->
+            <!-- CTA -->
             <div class="d-flex justify-content-between align-items-center mt-4">
               <div>
-                <div class="text-muted small">Start from</div>
-                <div class="service-price">7 $/H</div>
+                <div class="text-muted small">
+                  Service Type
+                </div>
+                <div class="service-price">
+                  Government Service
+                </div>
               </div>
 
               <button class="btn btn-warning service-cta">
-                Booking Now
+                Download App
               </button>
             </div>
 
@@ -1181,6 +1193,98 @@
     </div>
   </div>
 </div>
+
+    <!-- Services Detail Modal: Citizens Services -->
+<div class="modal fade" id="serviceDetailModal-Citizens" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content service-modal">
+
+      <!-- Close -->
+      <button type="button"
+              class="btn-close service-modal-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+
+      <div class="modal-body p-0">
+        <div class="row g-0">
+
+          <!-- LEFT : IMAGE -->
+          <div class="col-md-5 service-modal-image">
+            <img
+              src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696ff16d0eb9d2e3ef93fd8e_Citizens.jpg"
+              alt="Citizens Services">
+          </div>
+
+          <!-- RIGHT : CONTENT -->
+          <div class="col-md-7 p-4 service-modal-content">
+
+            <!-- Title + Status -->
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h5 class="fw-bold mb-0">
+                Citizens Services
+              </h5>
+              <span class="service-rating">
+                Instant Approval
+              </span>
+            </div>
+
+            <p class="text-muted small mb-3">
+              Ministry of Interior • Citizens Digital Services
+            </p>
+
+            <!-- Meta Info -->
+            <ul class="service-meta">
+              <li>
+                <i class="bi bi-box-arrow-right"></i>
+                Qataris Exit Permit
+              </li>
+              <li>
+                <i class="bi bi-file-earmark-text"></i>
+                Qatari Document Lost Declaration
+              </li>
+              <li>
+                <i class="bi bi-x-circle"></i>
+                Cancel Exit Permit
+              </li>
+              <li>
+                <i class="bi bi-file-earmark-check"></i>
+                Qatari Documents Request
+              </li>
+            </ul>
+
+            <!-- Description -->
+            <p class="service-description">
+              Access dedicated digital services for Qatari citizens.
+              Submit exit permits, report lost documents, request official
+              documents, and manage approvals instantly through a secure
+              government platform.
+            </p>
+
+            <!-- CTA -->
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <div>
+                <div class="text-muted small">
+                  Service Category
+                </div>
+                <div class="service-price">
+                  Citizens Services
+                </div>
+              </div>
+
+              <button class="btn btn-warning service-cta">
+                Download App
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 
     <!-- Bootstrap JS -->
