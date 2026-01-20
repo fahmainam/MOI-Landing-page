@@ -1,0 +1,61 @@
+/* ============================= */
+/* RTL Arabic Support */
+/* ============================= */
+body {
+  font-family: "Frutiger LT Arabic", sans-serif;
+}
+body.rtl {
+  
+  direction: rtl;
+  text-align: right;
+}
+
+body.rtl .navbar-nav {
+  margin-left: 0 !important;
+  margin-right: auto;
+}
+
+body.rtl .navbar .ms-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+body.rtl .me-2,
+body.rtl .me-3 {
+  margin-right: 0 !important;
+  margin-left: 0.5rem !important;
+}
+
+body.rtl .ms-2,
+body.rtl .ms-3 {
+  margin-left: 0 !important;
+  margin-right: 0.5rem !important;
+}
+
+body.rtl .text-start {
+  text-align: right !important;
+}
+
+body.rtl .text-end {
+  text-align: left !important;
+}
+
+body.rtl .hero-buttons .btn {
+  margin-left: 0 !important;
+  margin-right: 0.75rem;
+}
+
+body.rtl .accordion-button {
+  text-align: right;
+}
+
+body.rtl .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+body.rtl .feature-icon,
+body.rtl .contact-card-icon {
+  margin-right: 0;
+  margin-left: 1rem;
+}
