@@ -1,5 +1,195 @@
 
 
+html[dir="rtl"] body {
+  text-align: right;
+  font-family: "Frutiger LT Arabic", "Cairo", "Tahoma", Arial, sans-serif;
+}
+/* Containers */
+html[dir="rtl"] .container,
+html[dir="rtl"] .container-fluid,
+html[dir="rtl"] .container-lg,
+html[dir="rtl"] .container-md,
+html[dir="rtl"] .container-sm,
+html[dir="rtl"] .container-xl,
+html[dir="rtl"] .container-xxl {
+  margin-left: auto;
+  margin-right: auto;
+}
+html[dir="rtl"] .navbar {
+  direction: rtl;
+}
+
+html[dir="rtl"] .navbar-nav {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+html[dir="rtl"] .navbar-brand {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+html[dir="rtl"] .navbar-toggler {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Dropdown */
+html[dir="rtl"] .dropdown-menu {
+  text-align: right;
+  right: 0;
+  left: auto;
+}
+
+/* Rows */
+html[dir="rtl"] .row {
+  flex-direction: row-reverse;
+}
+html[dir="rtl"] h1,
+
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+
+html[dir="rtl"] h6,
+
+html[dir="rtl"] span,
+html[dir="rtl"] h2,
+html[dir="rtl"] small {
+  text-align: center;
+}
+html[dir="rtl"] p,
+
+html[dir="rtl"] h5 {
+  text-align: right;
+}
+
+html[dir="rtl"] ul,
+html[dir="rtl"] ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Floating labels */
+html[dir="rtl"] .form-floating > label {
+  right: 0;
+  left: auto;
+  padding-right: 1rem;
+}
+
+/* Checkboxes & radios */
+html[dir="rtl"] .form-check {
+  padding-right: 1.5em;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .form-check-input {
+  margin-right: -1.5em;
+  margin-left: 0;
+}
+html[dir="rtl"] .card {
+  text-align: right;
+}
+
+html[dir="rtl"] .list-group {
+  padding-right: 0;
+}
+
+html[dir="rtl"] .list-group-item {
+  text-align: right;
+}
+html[dir="rtl"] .btn i {
+  margin-left: 0.4rem;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .btn-group {
+  flex-direction: row-reverse;
+}
+html[dir="rtl"] .carousel-inner {
+  direction: rtl;
+}
+
+html[dir="rtl"] .carousel-control-prev {
+  right: 10px;
+  left: auto;
+}
+
+html[dir="rtl"] .carousel-control-next {
+  left: 10px;
+  right: auto;
+}
+html[dir="rtl"] .modal-content {
+  text-align: right;
+}
+
+html[dir="rtl"] .modal-header .btn-close {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+html[dir="rtl"] .offcanvas {
+  right: 0;
+  left: auto;
+}
+html[dir="rtl"] table {
+  direction: rtl;
+}
+
+html[dir="rtl"] th,
+html[dir="rtl"] td {
+  text-align: right;
+}
+html[dir="rtl"] .pagination {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .breadcrumb {
+  direction: rtl;
+}
+
+html[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-left: 0.5rem;
+  padding-right: 0;
+}
+/* Text alignment */
+html[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+/* Float */
+html[dir="rtl"] .float-start {
+  float: right !important;
+}
+
+html[dir="rtl"] .float-end {
+  float: left !important;
+}
+
+/* Columns */
+html[dir="rtl"] [class^="col-"],
+html[dir="rtl"] [class*=" col-"] {
+  float: right;
+}
+@media (max-width: 768px) {
+  html[dir="rtl"] .row {
+    flex-direction: column;
+  }
+}
+.text-primary{
+    color: #ce0018 !important;
+}
+
 /* Custom CSS for AI Vision Pro Landing Page */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     --bs-gutter-x: 1.5rem;
@@ -122,14 +312,13 @@ html {
     z-index: 2;
 }
 .hero-content h1 {
-    text-align: left!important;
+    text-align: right!important;
 }
 /* =========================
    HERO VIDEO SECTION
 ========================= */
 
 .hero-video-section {
-   
   position: relative;
   height: 100vh;
   min-height: 600px;
@@ -2480,7 +2669,7 @@ html {
 }
 .footer-logo img{
   filter: brightness(0) invert(1)!important;
-  height: 65px !important;
+    height: 65px !important;
 }
 .footer-logo:hover {
     color: #06b6d4;
@@ -3360,12 +3549,12 @@ html {
 
 /* Left / Right positioning */
 .timeline-item.left {
-  left: 0;
+  right: 50%;
   text-align: right;
 }
 
 .timeline-item.right {
-  left: 50%;
+  left: 0;
   text-align: left;
 }
 

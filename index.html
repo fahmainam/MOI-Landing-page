@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Vision Pro - Revolutionizing Intelligence</title>
+    <title>Metrash2 - Ministry of Interior, Doha, Qatar</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" id="langStylesheet">
+    <link rel="preload" href="css/style-ar.css" as="style">
+    <!-- i18next JS -->
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
@@ -19,70 +23,75 @@
             <a class="navbar-brand  fw-bold fs-3 text-primary" href="#">
                 <img class="logo" src="img/moi.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                       <a class="nav-link active fw-medium" data-i18n="nav.home" href="#home">Home</a>
-                    </li>
-                         <li class="nav-item">
-                        <a class="nav-link fw-medium" data-i18n="nav.pricing" href="#services">Services</a>
+                        <a class="nav-link active fw-medium" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" data-i18n="nav.about" href="#about">About</a>
+                        <a class="nav-link fw-medium" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link fw-medium" data-i18n="nav.features" href="#features">Features</a>
+                        <a class="nav-link fw-medium" href="#activate">Activate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" data-i18n="nav.faq" href="#faq">FAQ</a>
+                        <a class="nav-link fw-medium" href="#two-device">Activate two Device</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" data-i18n="nav.contact" href="#contact">Contact</a>
+                        <a class="nav-link fw-medium" href="#download">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item ms-2">
-                        <a class="btn btn-primary px-4" data-i18n="nav.getStarted" href="#get-started">Get Started</a>
+                        <a class="btn btn-primary px-4" href="#call-us">Call Us</a>
                     </li>
-                   
-                     <li id="langToggle"  class=" language-mobile  ms-2">
-                        <a  id="langLabel" class="btn btn-primary  fw-mediumpx-4" data-i18n="nav.getStarted" >AR</a>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary px-4" href="ar/index-ar.html">AR</a>
                     </li>
 
+
+
+
                 </ul>
-                
+
             </div>
         </div>
     </nav>
 
 
 
-   
-    
-    <!-- Hero Section -->
-  
 
-        <section class="hero-video-section">
-  <video autoplay loop muted playsinline>
-    <source src="video/video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+
+    <!-- Hero Section -->
+
+
+    <section id="home" class="hero-video-section">
+        <video autoplay loop muted playsinline>
+            <source src="video/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
         <div class="container">
             <div class="row min-vh-100 align-items-center">
                 <div class="col-lg-6">
                     <div class="hero-content">
-                       <h1 class="display-3 fw-bold text-white mb-4" data-i18n="hero.title">
-  Welcome to Metrash2
-</h1>
-                      <p class="lead text-white-50 mb-5 fs-5" data-i18n="hero.subtitle">
-  Unlock the power of artificial intelligence to automate processes...
-</p>
+                        <h1 class="display-3 fw-bold text-white mb-4" data-i18n="hero.title">
+                            Welcome to Metrash2
+                        </h1>
+                        <p class="lead text-white-50 mb-5 fs-5" data-i18n="hero.subtitle">
+                            Explore more than 224 services offered by the Ministry of Interior
+                        </p>
                         <div class="hero-buttons animate-fade-in-delay-2">
-                            <a href="#get-started" class="btn btn-primary btn-lg px-5 py-3 me-3 mb-3" data-i18n="hero.ctaPrimary">
+                            <a href="#get-started" class="btn btn-primary btn-lg px-5 py-3 me-3 mb-3"
+                                data-i18n="hero.ctaPrimary">
                                 <i class="bi bi-rocket-takeoff me-2"></i>Get Started Free
                             </a>
-                            <a href="#learn-more" class="btn btn-outline-light btn-lg px-5 py-3 mb-3" data-i18n="hero.ctaSecondary">
+                            <a href="#learn-more" class="btn btn-outline-light btn-lg px-5 py-3 mb-3"
+                                data-i18n="hero.ctaSecondary">
                                 <i class="bi bi-play-circle me-2"></i>Learn More
                             </a>
                         </div>
@@ -113,7 +122,8 @@
                 <div class="col-lg-6">
                     <div class="hero-image animate-float">
                         <div class="image-container">
-                            <img src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696fc9ceacd9a0ba64913e66_Flying%20iPhone%20X%20Mockups%20copy.png" alt="AI Technology Visualization" class="img-fluid rounded-4 shadow-lg">
+                            <img src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696fc9ceacd9a0ba64913e66_Flying%20iPhone%20X%20Mockups%20copy.png"
+                                alt="Metrash2" class="img-fluid rounded-4 shadow-lg">
                             <div class="floating-cards">
                                 <div class="floating-card card-1">
                                     <i class="bi bi-graph-up-arrow text-success"></i>
@@ -139,7 +149,7 @@
             </a>
         </div>
     </section>
- <!-- Services Section -->
+    <!-- Services Section -->
     <section id="services" class="services-section py-5">
         <div class="container">
             <!-- Section Header -->
@@ -150,114 +160,121 @@
                     <span class="text-primary">We Offer</span>
                 </h2>
                 <p class="lead text-muted mx-auto" style="max-width: 800px;">
-                    The Ministry of Interior (MOI) constantly improves and simplifies its services 
-                    delivery channels and procedures. In the light of this, MOI introduces its unique service 
-                    “Metrash2” that enables Qatari nationals and residents to apply for and obtain more than 224 services that save their time, 
+                    The Ministry of Interior (MOI) constantly improves and simplifies its services
+                    delivery channels and procedures. In the light of this, MOI introduces its unique service
+                    “Metrash2” that enables Qatari nationals and residents to apply for and obtain more than 224
+                    services that save their time,
                     effort and money, while enjoying the convenience of using their smart phones.
                 </p>
             </div>
             <!-- Services Cards -->
-<div id="servicesCarousel" class="carousel slide services-carousel" data-bs-ride="carousel">
-  <div class="carousel-inner">
+            <div id="servicesCarousel" class="carousel slide services-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
 
-    <!-- SLIDE 1 -->
-    <div class="carousel-item active">
-      <div class="container py-4">
-        <div class="services-row">
-          <!-- Card 1 -->
-          <div class="service-col service-item  fade-in-up">
-            <div class="service-card">
-              <i class="bi bi-car-front"></i>
-              <h6>Traffic</h6>
-              <p>Vehicle & traffic services</p>
-              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal-traffic">
-                View Details
-              </button>
+                    <!-- SLIDE 1 -->
+                    <div class="carousel-item active">
+                        <div class="container py-4">
+                            <div class="services-row">
+                                <!-- Card 1 -->
+                                <div class="service-col service-item  fade-in-up">
+                                    <div class="service-card">
+                                        <i class="bi bi-car-front"></i>
+                                        <h6>Traffic</h6>
+                                        <p>Vehicle & traffic services</p>
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#serviceDetailModal-traffic">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="service-col service-item fade-in-up">
+                                    <div class="service-card">
+                                        <i class="bi bi-people"></i>
+                                        <h6>Citizens</h6>
+                                        <p>Citizen services</p>
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#serviceDetailModal-Citizens">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="service-col service-item fade-in-up">
+                                    <div class="service-card">
+                                        <i class="bi bi-house-door"></i>
+                                        <h6>Residency</h6>
+                                        <p>Residency permits</p>
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#serviceDetailModal">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 -->
+                    <div class="carousel-item">
+                        <div class="container py-4">
+                            <div class="services-row">
+                                <!-- Card 4 -->
+                                <div class="service-col service-item fade-in-up">
+                                    <div class="service-card">
+                                        <i class="bi bi-briefcase"></i>
+                                        <h6>Leave Notifications</h6>
+                                        <p>Leave management</p>
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#serviceDetailModal">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Card 5 -->
+                                <div class="service-col service-item fade-in-up">
+                                    <div class="service-card">
+                                        <i class="bi bi-passport"></i>
+                                        <h6>Visa</h6>
+                                        <p>Visa services</p>
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#serviceDetailModal">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Card 6 -->
+                                <div class="service-col service-item fade-in-up">
+                                    <div class="service-card">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <h6>National Address</h6>
+                                        <p>Address registration</p>
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#serviceDetailModal">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CONTROLS -->
+                <button class="carousel-control-prev service-control" type="button" data-bs-target="#servicesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next service-control" type="button" data-bs-target="#servicesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="service-col service-item fade-in-up">
-            <div class="service-card">
-              <i class="bi bi-people"></i>
-              <h6>Citizens</h6>
-              <p>Citizen services</p>
-              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal-Citizens">
-                View Details
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="service-col service-item fade-in-up">
-            <div class="service-card">
-              <i class="bi bi-house-door"></i>
-              <h6>Residency</h6>
-              <p>Residency permits</p>
-              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SLIDE 2 -->
-    <div class="carousel-item">
-      <div class="container py-4">
-        <div class="services-row">
-          <!-- Card 4 -->
-          <div class="service-col service-item fade-in-up">
-            <div class="service-card">
-              <i class="bi bi-briefcase"></i>
-              <h6>Leave Notifications</h6>
-              <p>Leave management</p>
-              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal">
-                View Details
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="service-col service-item fade-in-up">
-            <div class="service-card">
-              <i class="bi bi-passport"></i>
-              <h6>Visa</h6>
-              <p>Visa services</p>
-              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal">
-                View Details
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="service-col service-item fade-in-up">
-            <div class="service-card">
-              <i class="bi bi-geo-alt"></i>
-              <h6>National Address</h6>
-              <p>Address registration</p>
-              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#serviceDetailModal">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- CONTROLS -->
-  <button class="carousel-control-prev service-control" type="button"
-          data-bs-target="#servicesCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <button class="carousel-control-next service-control" type="button"
-          data-bs-target="#servicesCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
 
 
 
@@ -266,135 +283,136 @@
 
     <!-- Activate Metrash  -->
 
-    <section class="metrash-hero">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <!-- Mobile Mockup -->
-      <div class="col-lg-5 text-center mb-5 mb-lg-0">
-        <img class="metrash-phone floating-phone" src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696fde4cc3facbaaec7e31bc_8376180%20copy.png">
-     
-      </div>
-
-      <!-- Content -->
-      <div class="col-lg-7 text-black">
-        <h2 class="fw-bold mb-4">
-          Activating Metrash2 service
-        </h2>
-
-        <p class="mb-3">
-          Metrash2 Service requires that there must be a mobile number
-          registered by the applicant’s name.
-        </p>
-
-        <p class="mb-4">
-          You may obtain and activate Metrash2 Service through SMS.
-        </p>
-
-        <a href="#" class="btn btn-primary btn-dark px-4 py-2 fw-semibold">
-          Activate Metrash2 through SMS
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Steps to activate app on two mobiles -->
-<section class="timeline-section">
-  <div class="timeline-overlay"></div>
-
-  <div class="container position-relative">
-    <div class="row">
-      <div class="col-12 text-center mb-5 fade-in-up">
-         
-                <h2 class="display-5 fw-bold text-white mb-4">
-                    Activate Metrash2 on a Second Phone <br>
-                    <span class="text-primary"> Follow these four simple steps</span>
-                </h2>
-               
-        <h2 class="text-white fw-bold">
-          
-        </h2>
-        <p class="text-white-50">
-         
-        </p>
-      </div>
-    </div>
-
-    <div class="timeline">
-
-      <!-- STEP 1 -->
-      <div class="timeline-item left ">
-        <div class="timeline-content feature-item fade-in fade-in-left">
-            
-          <h5 class="text-primary">Step 1  <i class="bi bi-check-circle-fill"></i></h5>
-         
-          <p>
-            Download Metrash2 service from your preferred app store
-            on the second smart phone.
-          </p>
-        </div>
-        <span class="timeline-dot"></span>
-      </div>
-
-      <!-- STEP 2 -->
-      <div class="timeline-item right">
-        <div class="timeline-content feature-item fade-in fade-in-right">
-          <h5 class="text-primary"><i class="bi bi-check-circle-fill"></i>  Step 2</h5>
-          <p>
-            Enter your QID number and the password used on the first
-            smart phone.
-          </p>
-        </div>
-        <span class="timeline-dot"></span>
-      </div>
-
-      <!-- STEP 3 -->
-      <div class="timeline-item left">
-        <div class="timeline-content feature-item fade-in fade-in-left">
-          <h5 class="text-primary">Step 3  <i class="bi bi-check-circle-fill"></i></h5>
-          <p>
-            Receive an SMS with a temporary activation key
-            valid for 10 minutes.
-          </p>
-        </div>
-        <span class="timeline-dot"></span>
-      </div>
-
-      <!-- STEP 4 -->
-      <div class="timeline-item right">
-        <div class="timeline-content feature-item fade-in fade-in-right">
-          <h5 class="text-primary"> <i class="bi bi-check-circle-fill"></i>  Step 4 </h5>
-          <p>
-            Enter the activation key and complete the service activation
-            on your second phone.
-          </p>
-        </div>
-        <span class="timeline-dot"></span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Download Metras2 App  playstore and app store -->
-  <section id="contact" class="contact-section py-5">
+    <section id="activate" class="metrash-hero">
         <div class="container">
- <div class="text-center mb-5 fade-in-up">
+            <div class="row align-items-center">
+
+                <!-- Mobile Mockup -->
+                <div class="col-lg-5 text-center mb-5 mb-lg-0">
+                    <img class="metrash-phone floating-phone"
+                        src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696fde4cc3facbaaec7e31bc_8376180%20copy.png">
+
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-7 text-black">
+                    <h2 class="fw-bold mb-4">
+                        Activating Metrash2 service
+                    </h2>
+
+                    <p class="mb-3">
+                        Metrash2 Service requires that there must be a mobile number
+                        registered by the applicant’s name.
+                    </p>
+
+                    <p class="mb-4">
+                        You may obtain and activate Metrash2 Service through SMS.
+                    </p>
+
+                    <a href="#" class="btn btn-primary btn-dark px-4 py-2 fw-semibold">
+                        Activate Metrash2 through SMS
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Steps to activate app on two mobiles -->
+    <section id="two-device" class="timeline-section">
+        <div class="timeline-overlay"></div>
+
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12 text-center mb-5 fade-in-up">
+
+                    <h2 class="display-5 fw-bold text-white mb-4">
+                        Activate Metrash2 on a Second Phone <br>
+                        <span class="text-primary"> Follow these four simple steps</span>
+                    </h2>
+
+                    <h2 class="text-white fw-bold">
+
+                    </h2>
+                    <p class="text-white-50">
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline">
+
+                <!-- STEP 1 -->
+                <div class="timeline-item left ">
+                    <div class="timeline-content feature-item fade-in fade-in-left">
+
+                        <h5 class="text-primary">Step 1 <i class="bi bi-check-circle-fill"></i></h5>
+
+                        <p>
+                            Download Metrash2 service from your preferred app store
+                            on the second smart phone.
+                        </p>
+                    </div>
+                    <span class="timeline-dot"></span>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content feature-item fade-in fade-in-right">
+                        <h5 class="text-primary"><i class="bi bi-check-circle-fill"></i> Step 2</h5>
+                        <p>
+                            Enter your QID number and the password used on the first
+                            smart phone.
+                        </p>
+                    </div>
+                    <span class="timeline-dot"></span>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content feature-item fade-in fade-in-left">
+                        <h5 class="text-primary">Step 3 <i class="bi bi-check-circle-fill"></i></h5>
+                        <p>
+                            Receive an SMS with a temporary activation key
+                            valid for 10 minutes.
+                        </p>
+                    </div>
+                    <span class="timeline-dot"></span>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content feature-item fade-in fade-in-right">
+                        <h5 class="text-primary"> <i class="bi bi-check-circle-fill"></i> Step 4 </h5>
+                        <p>
+                            Enter the activation key and complete the service activation
+                            on your second phone.
+                        </p>
+                    </div>
+                    <span class="timeline-dot"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Metras2 App  playstore and app store -->
+    <section id="download" class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5 fade-in-up">
                 <span class="badge bg-primary-soft text-primary mb-3">Download Metrash2 App</span>
-       <h2 class="display-5 fw-bold text-dark mb-4">
-                    Download  
+                <h2 class="display-5 fw-bold text-dark mb-4">
+                    Download
                     <span class="text-primary">Metrash2</span>
                     App
                 </h2>
                 <p class="lead text-muted mx-auto" style="max-width: 800px;">
                     To download Metrash2, please click on store.
                 </p>
- </div>
-             
-                  <div class="contact-cta">
+            </div>
+
+            <div class="contact-cta">
                 <div class="row g-4">
                     <div class="col-sm-6 col-lg-4 fade-in-up">
                         <div class="cta-card text-center">
@@ -402,7 +420,7 @@
                                 <i class="bi bi-apple text-primary"></i>
                             </div>
                             <h5 class="fw-semibold mb-2">Available on Apple Store</h5>
-                          
+
                             <a href="#demo" class="btn btn-outline-primary">
                                 <i class="bi bi-download me-2"></i>Download App
                             </a>
@@ -414,7 +432,7 @@
                                 <i class="bi bi-google text-primary"></i>
                             </div>
                             <h5 class="fw-semibold mb-2">Available on Google Play</h5>
-                           
+
                             <a href="#resources" class="btn btn-outline-primary">
                                 <i class="bi bi-file-earmark-text me-2"></i>Download App
                             </a>
@@ -426,7 +444,7 @@
                                 <i class="bi bi-rocket-takeoff text-primary"></i>
                             </div>
                             <h5 class="fw-huawei mb-2">Available on app Gallery</h5>
-                           
+
                             <a href="#get-started" class="btn btn-primary">
                                 <i class="bi bi-arrow-right me-2"></i>Download App
                             </a>
@@ -434,236 +452,251 @@
                     </div>
                 </div>
             </div>
-            </div>
-</section>
-        
-   <!-- FAQ Section -->
-    <section id="faq" class="faq-section py-5">
-        <div class="container">
-            <!-- Section Header -->
-            <div class="text-center mb-5">
-                <span class="badge bg-primary-soft text-primary mb-3">Frequently Asked Questions</span>
-                <h2 class="display-5 fw-bold text-dark mb-4">
-                    Got Questions? <span class="text-primary">We've Got Answers</span>
-                </h2>
-                <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                    Find answers to the most common questions about AI Vision Pro.
-                    Can't find what you're looking for? Our support team is here to help.
-                </p>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <!-- FAQ Accordion -->
-                    <div class="accordion faq-accordion" id="faqAccordion">
-
-                        <!-- FAQ Item 1 -->
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="faq1">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                    <i class="bi bi-question-circle me-3"></i>
-                                    What is AI Vision Pro and how does it work?
-                                </button>
-                            </h3>
-                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p>AI Vision Pro is a comprehensive artificial intelligence platform that combines machine learning,
-                                        computer vision, and natural language processing to help businesses automate processes and gain
-                                        valuable insights from their data.</p>
-                                    <p>Our platform works by analyzing your data through advanced AI algorithms, providing real-time
-                                        insights, predictive analytics, and automated decision-making capabilities. You can integrate
-                                        our APIs into your existing systems or use our dashboard interface to access all features.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 2 -->
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="faq2">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    <i class="bi bi-gear me-3"></i>
-                                    How easy is it to integrate AI Vision Pro with my existing systems?
-                                </button>
-                            </h3>
-                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p>Integration is designed to be simple and straightforward. We provide:</p>
-                                    <ul>
-                                        <li><strong>RESTful APIs</strong> with comprehensive documentation</li>
-                                        <li><strong>SDK libraries</strong> for popular programming languages</li>
-                                        <li><strong>Pre-built connectors</strong> for common business applications</li>
-                                        <li><strong>No-code solutions</strong> for non-technical users</li>
-                                        <li><strong>Dedicated support team</strong> to assist with implementation</li>
-                                    </ul>
-                                    <p>Most integrations can be completed in under a week, and our team provides full support
-                                        throughout the process.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 3 -->
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="faq3">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    <i class="bi bi-shield-check me-3"></i>
-                                    Is my data secure with AI Vision Pro?
-                                </button>
-                            </h3>
-                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p>Security is our top priority. We implement enterprise-grade security measures including:</p>
-                                    <ul>
-                                        <li><strong>256-bit encryption</strong> for data in transit and at rest</li>
-                                        <li><strong>SOC 2 Type II compliance</strong> with regular audits</li>
-                                        <li><strong>GDPR compliance</strong> for European data protection</li>
-                                        <li><strong>Multi-factor authentication</strong> and role-based access controls</li>
-                                        <li><strong>Regular security assessments</strong> and penetration testing</li>
-                                    </ul>
-                                    <p>Your data is never shared with third parties and remains completely under your control.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 4 -->
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="faq4">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    <i class="bi bi-credit-card me-3"></i>
-                                    What pricing plans are available and can I change plans later?
-                                </button>
-                            </h3>
-                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p>We offer three flexible pricing plans to suit businesses of all sizes:</p>
-                                    <ul>
-                                        <li><strong>Starter ($29/month)</strong> - Perfect for small businesses and startups</li>
-                                        <li><strong>Professional ($99/month)</strong> - Ideal for growing teams with advanced needs</li>
-                                        <li><strong>Enterprise (Custom)</strong> - Tailored solutions for large organizations</li>
-                                    </ul>
-                                    <p>You can upgrade or downgrade your plan at any time without penalties. Annual subscriptions
-                                        receive a 20% discount, and all plans include a 30-day money-back guarantee.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 5 -->
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="faq5">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    <i class="bi bi-headset me-3"></i>
-                                    What kind of support do you provide?
-                                </button>
-                            </h3>
-                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p>We provide comprehensive support to ensure your success:</p>
-                                    <ul>
-                                        <li><strong>24/7 technical support</strong> for Enterprise customers</li>
-                                        <li><strong>Priority email and chat support</strong> for Professional plans</li>
-                                        <li><strong>Email support</strong> for Starter plans (response within 24 hours)</li>
-                                        <li><strong>Comprehensive documentation</strong> and video tutorials</li>
-                                        <li><strong>Community forum</strong> with expert moderators</li>
-                                        <li><strong>Dedicated onboarding</strong> for all new customers</li>
-                                    </ul>
-                                    <p>Our support team consists of AI experts and technical specialists ready to help you
-                                        maximize the value of our platform.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 6 -->
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="faq6">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                    <i class="bi bi-clock me-3"></i>
-                                    How long does it take to see results?
-                                </button>
-                            </h3>
-                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p>The timeline for seeing results depends on your specific use case, but most customers
-                                        experience benefits quickly:</p>
-                                    <ul>
-                                        <li><strong>Immediate</strong> - Basic analytics and insights available instantly</li>
-                                        <li><strong>1-2 weeks</strong> - Automated processes and workflows operational</li>
-                                        <li><strong>1 month</strong> - Measurable improvements in efficiency and accuracy</li>
-                                        <li><strong>3 months</strong> - Full ROI typically realized</li>
-                                    </ul>
-                                    <p>Our onboarding team works with you to identify quick wins and ensure you see value
-                                        from day one.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 7 -->
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="faq7">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                    <i class="bi bi-people me-3"></i>
-                                    Do I need technical expertise to use AI Vision Pro?
-                                </button>
-                            </h3>
-                            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p>No technical expertise is required! AI Vision Pro is designed for users of all skill levels:</p>
-                                    <ul>
-                                        <li><strong>Intuitive dashboard</strong> with drag-and-drop functionality</li>
-                                        <li><strong>Pre-built templates</strong> for common use cases</li>
-                                        <li><strong>No-code workflows</strong> that anyone can configure</li>
-                                        <li><strong>Visual analytics</strong> with easy-to-understand charts and reports</li>
-                                        <li><strong>Guided tutorials</strong> and step-by-step onboarding</li>
-                                    </ul>
-                                    <p>For advanced customization, our APIs are available for technical teams, but the core
-                                        platform is accessible to business users without any programming knowledge.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 8 -->
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="faq8">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                    <i class="bi bi-arrow-up-circle me-3"></i>
-                                    Can I upgrade or cancel my subscription at any time?
-                                </button>
-                            </h3>
-                            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p>Yes, you have complete flexibility with your subscription:</p>
-                                    <ul>
-                                        <li><strong>Instant upgrades</strong> - Access higher-tier features immediately</li>
-                                        <li><strong>Flexible downgrades</strong> - Effective at your next billing cycle</li>
-                                        <li><strong>No cancellation fees</strong> - Cancel anytime without penalties</li>
-                                        <li><strong>Data export</strong> - Download all your data before canceling</li>
-                                        <li><strong>30-day money-back guarantee</strong> for new subscriptions</li>
-                                    </ul>
-                                    <p>We believe in earning your business every month, so we make it easy to adjust your
-                                        plan as your needs change.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Still Have Questions CTA -->
-            <div class="faq-cta text-center mt-5">
-                <div class="cta-content">
-                    <h4 class="fw-bold text-white mb-3">Still have questions?</h4>
-                    <p class="text-white mb-4">Our team of AI experts is ready to help you find the perfect solution for your business.</p>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="btn btn-primary btn-lg me-3">
-                            <i class="bi bi-telephone me-2"></i>Schedule a Call
-                        </a>
-                        <a href="#demo" class="btn btn-outline-primary btn-lg">
-                            <i class="bi bi-play-circle me-2"></i>Watch Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section py-5">
+  <div class="container">
+
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <span class="badge bg-primary-soft text-primary mb-3">
+        Frequently Asked Questions
+      </span>
+      <h2 class="display-5 fw-bold text-dark mb-4">
+        Need Help with <span class="text-primary">Metrash2?</span>
+      </h2>
+      <p class="lead text-muted mx-auto" style="max-width: 600px;">
+        Find answers to the most common questions related to Metrash2 services
+        provided by the Ministry of Interior – State of Qatar.
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="accordion faq-accordion" id="faqAccordion">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1" aria-expanded="true">
+                <i class="bi bi-question-circle me-3"></i>
+                What is Metrash2?
+              </button>
+            </h3>
+            <div id="collapse1" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>
+                  Metrash2 is the official mobile application of the Ministry of Interior (MOI) in the State of Qatar.
+                  It allows citizens and residents to access more than 200 government services securely through their smartphones.
+                </p>
+                <p>
+                  Services include traffic, residency, visa, citizen services, official requests, notifications,
+                  and many other digital government services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse2">
+                <i class="bi bi-phone me-3"></i>
+                Who can use the Metrash2 application?
+              </button>
+            </h3>
+            <div id="collapse2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>
+                  Metrash2 can be used by:
+                </p>
+                <ul>
+                  <li>Qatari citizens</li>
+                  <li>Residents holding a valid QID</li>
+                  <li>Companies and sponsors for related services</li>
+                </ul>
+                <p>
+                  A valid mobile number registered under the user’s QID is required for activation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse3">
+                <i class="bi bi-lock me-3"></i>
+                Is Metrash2 secure to use?
+              </button>
+            </h3>
+            <div id="collapse3" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>
+                  Yes. Metrash2 follows strict security standards implemented by the Ministry of Interior.
+                </p>
+                <ul>
+                  <li>Secure login with QID and password</li>
+                  <li>SMS-based verification and activation codes</li>
+                  <li>Encrypted data transmission</li>
+                  <li>Official government authentication systems</li>
+                </ul>
+                <p>
+                  Your personal information is protected and used only for official government services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse4">
+                <i class="bi bi-car-front me-3"></i>
+                What traffic services are available on Metrash2?
+              </button>
+            </h3>
+            <div id="collapse4" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li>Vehicle registration and renewal</li>
+                  <li>Driving license services</li>
+                  <li>Traffic violations and fine payments</li>
+                  <li>Vehicle ownership transfer</li>
+                </ul>
+                <p>
+                  All traffic services are available 24/7 without visiting traffic departments.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse5">
+                <i class="bi bi-people me-3"></i>
+                What citizen services are available?
+              </button>
+            </h3>
+            <div id="collapse5" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li>Exit permit requests for Qataris</li>
+                  <li>Lost document declarations</li>
+                  <li>Official document requests</li>
+                  <li>Permit cancellation services</li>
+                </ul>
+                <p>
+                  Citizen services are processed digitally with instant or fast approval in most cases.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse6">
+                <i class="bi bi-phone-flip me-3"></i>
+                Can I use Metrash2 on more than one phone?
+              </button>
+            </h3>
+            <div id="collapse6" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>
+                  Yes. Metrash2 can be activated on a second phone by following the official activation steps:
+                </p>
+                <ul>
+                  <li>Install the app on the second phone</li>
+                  <li>Log in using QID and password</li>
+                  <li>Receive an SMS activation code</li>
+                  <li>Complete activation within the given time</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse7">
+                <i class="bi bi-download me-3"></i>
+                How can I download Metrash2?
+              </button>
+            </h3>
+            <div id="collapse7" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>
+                  You can download Metrash2 from:
+                </p>
+                <ul>
+                  <li>Apple App Store</li>
+                  <li>Google Play Store</li>
+                  <li>Huawei AppGallery</li>
+                </ul>
+                <p>
+                  Search for <strong>Metrash2</strong> and install the official MOI application.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse8">
+                <i class="bi bi-headset me-3"></i>
+                How can I get support if I face an issue?
+              </button>
+            </h3>
+            <div id="collapse8" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>
+                  Support is available through:
+                </p>
+                <ul>
+                  <li>Metrash2 in-app support</li>
+                  <li>MOI official customer service centers</li>
+                  <li>MOI call center and digital channels</li>
+                </ul>
+                <p>
+                  The Ministry of Interior provides continuous support to ensure smooth service usage.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="faq-cta text-center mt-5">
+      <div class="cta-content">
+        <h4 class="fw-bold text-white mb-3">Still need assistance?</h4>
+        <p class="text-white mb-4">
+          The Ministry of Interior support team is ready to help you with Metrash2 services.
+        </p>
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <i class="bi bi-telephone me-2"></i>Contact Support
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -697,7 +730,8 @@
                                 <!-- Name Field -->
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
+                                        <input type="text" class="form-control" id="contactName" placeholder="Your Name"
+                                            required>
                                         <label for="contactName">
                                             <i class="bi bi-person me-2"></i>Full Name *
                                         </label>
@@ -710,7 +744,8 @@
                                 <!-- Email Field -->
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="contactEmail" placeholder="your@email.com" required>
+                                        <input type="email" class="form-control" id="contactEmail"
+                                            placeholder="your@email.com" required>
                                         <label for="contactEmail">
                                             <i class="bi bi-envelope me-2"></i>Email Address *
                                         </label>
@@ -723,7 +758,8 @@
                                 <!-- Company Field -->
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="contactCompany" placeholder="Company Name">
+                                        <input type="text" class="form-control" id="contactCompany"
+                                            placeholder="Company Name">
                                         <label for="contactCompany">
                                             <i class="bi bi-building me-2"></i>Company Name
                                         </label>
@@ -733,7 +769,8 @@
                                 <!-- Phone Field -->
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="tel" class="form-control" id="contactPhone" placeholder="Phone Number">
+                                        <input type="tel" class="form-control" id="contactPhone"
+                                            placeholder="Phone Number">
                                         <label for="contactPhone">
                                             <i class="bi bi-telephone me-2"></i>Phone Number
                                         </label>
@@ -764,7 +801,8 @@
                                 <!-- Message Field -->
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" id="contactMessage" placeholder="Your message..." style="height: 150px" required></textarea>
+                                        <textarea class="form-control" id="contactMessage" placeholder="Your message..."
+                                            style="height: 150px" required></textarea>
                                         <label for="contactMessage">
                                             <i class="bi bi-chat-text me-2"></i>Message *
                                         </label>
@@ -779,7 +817,8 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="privacyConsent" required>
                                         <label class="form-check-label text-muted" for="privacyConsent">
-                                            I agree to the <a href="#privacy" class="text-primary">Privacy Policy</a> and consent to being contacted by the AI Vision Pro team. *
+                                            I agree to the <a href="#privacy" class="text-primary">Privacy Policy</a>
+                                            and consent to being contacted by the AI Vision Pro team. *
                                         </label>
                                         <div class="invalid-feedback">
                                             You must agree to the privacy policy.
@@ -804,7 +843,8 @@
                         <!-- Success Message -->
                         <div class="alert alert-success contact-success d-none" role="alert">
                             <i class="bi bi-check-circle me-2"></i>
-                            <strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you within 24 hours.
+                            <strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you
+                            within 24 hours.
                         </div>
                     </div>
                 </div>
@@ -868,8 +908,8 @@
                         <div class="contact-card-content">
                             <h5 class="fw-semibold mb-1">Call Us</h5>
                             <p class="text-muted mb-2">Speak with our sales team</p>
-                            <a href="tel:+1-555-AI-VISION" class="contact-link">
-                                +1 (555) AI-VISION
+                            <a href="tel:+974-MOI Doha Qatar" class="contact-link">
+                                +974 MOI Doha Qatar
                             </a>
                             <small class="text-muted d-block">Mon-Fri, 9am-6pm PST</small>
                         </div>
@@ -885,8 +925,8 @@
                         <div class="contact-card-content">
                             <h5 class="fw-semibold mb-1">Email Us</h5>
                             <p class="text-muted mb-2">Send us an email anytime</p>
-                            <a href="mailto:hello@aivisionpro.com" class="contact-link">
-                                hello@aivisionpro.com
+                            <a href="mailto:help@moidohaqatar" class="contact-link">
+                                help@moidohaqatar
                             </a>
                             <small class="text-muted d-block">We respond within 4 hours</small>
                         </div>
@@ -903,14 +943,13 @@
                             <h5 class="fw-semibold mb-1">Visit Us</h5>
                             <p class="text-muted mb-1">Our headquarters</p>
                             <address class="contact-address mb-0">
-                                123 Innovation Drive
-                                San Francisco, CA 94105
-                                United States
+                                Ministry of Interior, 
+                                Duhail, Doha, 
+                                Qatar
                             </address>
                         </div>
                     </div>
                 </div>
-
                 <!-- Live Chat -->
                 <div class="col-sm-6 col-lg-3">
                     <div class="contact-card">
@@ -928,16 +967,16 @@
                 </div>
             </div>
 
-       
+
         </div>
     </section>
 
-  
 
 
 
 
- 
+
+
 
 
     <!-- Footer Section -->
@@ -950,27 +989,28 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-brand">
                             <a href="#" class="footer-logo">
-                                <i class="bi bi-robot me-2"></i>
-                                <span class="fw-bold">AI Vision Pro</span>
+
+                                <img src="img/moi.png" alt="Metrash2 Logo" style="height: 40px;">
                             </a>
                             <p class="footer-description">
-                                Revolutionizing business intelligence with cutting-edge artificial intelligence.
-                                Transform your data into actionable insights and drive innovation across your organization.
+                               Simplifying government digital services through secure and smart solutions,
+enabling citizens and residents to complete their transactions efficiently via Metrash2.
+
                             </p>
 
                             <!-- Contact Info -->
                             <div class="footer-contact">
                                 <div class="contact-item mb-2">
                                     <i class="bi bi-envelope me-2"></i>
-                                    <a href="mailto:hello@aivisionpro.com">hello@aivisionpro.com</a>
+                                    <a href="mailto:help@moidohaqatar">help@moidohaqatar</a>
                                 </div>
                                 <div class="contact-item mb-2">
                                     <i class="bi bi-telephone me-2"></i>
-                                    <a href="tel:+1-555-AI-VISION">+1 (555) AI-VISION</a>
+                                    <a href="tel:+1-555-MOI Doha Qatar">+ (974) MOI Doha Qatar</a>
                                 </div>
                                 <div class="contact-item">
                                     <i class="bi bi-geo-alt me-2"></i>
-                                    <span>123 Innovation Drive, San Francisco</span>
+                                    <span>MOI Duhail, Doha, Qatar</span>
                                 </div>
                             </div>
                         </div>
@@ -1108,191 +1148,186 @@
     </footer>
 
     <!-- Service Detail Modal: Traffic & Vehicle Services -->
-<div class="modal fade" id="serviceDetailModal-traffic" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content service-modal">
+    <div class="modal fade" id="serviceDetailModal-traffic" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content service-modal">
 
-      <!-- Close -->
-      <button type="button"
-              class="btn-close service-modal-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"></button>
+                <!-- Close -->
+                <button type="button" class="btn-close service-modal-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
 
-      <div class="modal-body p-0">
-        <div class="row g-0">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
 
-          <!-- LEFT : IMAGE -->
-          <div class="col-md-5 service-modal-image">
-            <img
-              src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696feed448c4dba823a018e4_traffic.png"
-              alt="Government Service">
-          </div>
+                        <!-- LEFT : IMAGE -->
+                        <div class="col-md-5 service-modal-image">
+                            <img src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696feed448c4dba823a018e4_traffic.png"
+                                alt="Government Service">
+                        </div>
 
-          <!-- RIGHT : CONTENT -->
-          <div class="col-md-7 p-4 service-modal-content">
+                        <!-- RIGHT : CONTENT -->
+                        <div class="col-md-7 p-4 service-modal-content">
 
-            <!-- Title + Status -->
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h5 class="fw-bold mb-0">
-                Traffic & Vehicle Services
-              </h5>
-              <span class="service-rating">
-                Available
-              </span>
-            </div>
+                            <!-- Title + Status -->
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="fw-bold mb-0">
+                                    Traffic & Vehicle Services
+                                </h5>
+                                <span class="service-rating">
+                                    Available
+                                </span>
+                            </div>
 
-            <p class="text-muted small mb-3">
-              Ministry of Interior • Digital Services
-            </p>
+                            <p class="text-muted small mb-3">
+                                Ministry of Interior • Digital Services
+                            </p>
 
-            <!-- Meta Info -->
-            <ul class="service-meta">
-              <li>
-                <i class="bi bi-card-checklist"></i>
-                Vehicle registration, license renewal, fines
-              </li>
-              <li>
-                <i class="bi bi-geo-alt"></i>
-                State of Qatar
-              </li>
-              <li>
-                <i class="bi bi-clock"></i>
-                24/7 Online Access
-              </li>
-            </ul>
+                            <!-- Meta Info -->
+                            <ul class="service-meta">
+                                <li>
+                                    <i class="bi bi-card-checklist"></i>
+                                    Vehicle registration, license renewal, fines
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt"></i>
+                                    State of Qatar
+                                </li>
+                                <li>
+                                    <i class="bi bi-clock"></i>
+                                    24/7 Online Access
+                                </li>
+                            </ul>
 
-            <!-- Description -->
-            <p class="service-description">
-              Access essential traffic and vehicle-related services digitally.
-              Users can renew vehicle registrations, pay traffic fines,
-              update vehicle ownership details, and manage driving-related
-              requests securely through the platform.
-            </p>
+                            <!-- Description -->
+                            <p class="service-description">
+                                Access essential traffic and vehicle-related services digitally.
+                                Users can renew vehicle registrations, pay traffic fines,
+                                update vehicle ownership details, and manage driving-related
+                                requests securely through the platform.
+                            </p>
 
-            <!-- CTA -->
-            <div class="d-flex justify-content-between align-items-center mt-4">
-              <div>
-                <div class="text-muted small">
-                  Service Type
+                            <!-- CTA -->
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div>
+                                    <div class="text-muted small">
+                                        Service Type
+                                    </div>
+                                    <div class="service-price">
+                                        Government Service
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-warning service-cta">
+                                    Download App
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="service-price">
-                  Government Service
-                </div>
-              </div>
 
-              <button class="btn btn-warning service-cta">
-                Download App
-              </button>
             </div>
-
-          </div>
-
         </div>
-      </div>
-
     </div>
-  </div>
-</div>
 
     <!-- Services Detail Modal: Citizens Services -->
-<div class="modal fade" id="serviceDetailModal-Citizens" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content service-modal">
+    <div class="modal fade" id="serviceDetailModal-Citizens" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content service-modal">
 
-      <!-- Close -->
-      <button type="button"
-              class="btn-close service-modal-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"></button>
+                <!-- Close -->
+                <button type="button" class="btn-close service-modal-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
 
-      <div class="modal-body p-0">
-        <div class="row g-0">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
 
-          <!-- LEFT : IMAGE -->
-          <div class="col-md-5 service-modal-image">
-            <img
-              src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696ff16d0eb9d2e3ef93fd8e_Citizens.jpg"
-              alt="Citizens Services">
-          </div>
+                        <!-- LEFT : IMAGE -->
+                        <div class="col-md-5 service-modal-image">
+                            <img src="https://cdn.prod.website-files.com/67066f4a3ec7bfcff85ab281/696ff16d0eb9d2e3ef93fd8e_Citizens.jpg"
+                                alt="Citizens Services">
+                        </div>
 
-          <!-- RIGHT : CONTENT -->
-          <div class="col-md-7 p-4 service-modal-content">
+                        <!-- RIGHT : CONTENT -->
+                        <div class="col-md-7 p-4 service-modal-content">
 
-            <!-- Title + Status -->
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h5 class="fw-bold mb-0">
-                Citizens Services
-              </h5>
-              <span class="service-rating">
-                Instant Approval
-              </span>
-            </div>
+                            <!-- Title + Status -->
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="fw-bold mb-0">
+                                    Citizens Services
+                                </h5>
+                                <span class="service-rating">
+                                    Instant Approval
+                                </span>
+                            </div>
 
-            <p class="text-muted small mb-3">
-              Ministry of Interior • Citizens Digital Services
-            </p>
+                            <p class="text-muted small mb-3">
+                                Ministry of Interior • Citizens Digital Services
+                            </p>
 
-            <!-- Meta Info -->
-            <ul class="service-meta">
-              <li>
-                <i class="bi bi-box-arrow-right"></i>
-                Qataris Exit Permit
-              </li>
-              <li>
-                <i class="bi bi-file-earmark-text"></i>
-                Qatari Document Lost Declaration
-              </li>
-              <li>
-                <i class="bi bi-x-circle"></i>
-                Cancel Exit Permit
-              </li>
-              <li>
-                <i class="bi bi-file-earmark-check"></i>
-                Qatari Documents Request
-              </li>
-            </ul>
+                            <!-- Meta Info -->
+                            <ul class="service-meta">
+                                <li>
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    Qataris Exit Permit
+                                </li>
+                                <li>
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    Qatari Document Lost Declaration
+                                </li>
+                                <li>
+                                    <i class="bi bi-x-circle"></i>
+                                    Cancel Exit Permit
+                                </li>
+                                <li>
+                                    <i class="bi bi-file-earmark-check"></i>
+                                    Qatari Documents Request
+                                </li>
+                            </ul>
 
-            <!-- Description -->
-            <p class="service-description">
-              Access dedicated digital services for Qatari citizens.
-              Submit exit permits, report lost documents, request official
-              documents, and manage approvals instantly through a secure
-              government platform.
-            </p>
+                            <!-- Description -->
+                            <p class="service-description">
+                                Access dedicated digital services for Qatari citizens.
+                                Submit exit permits, report lost documents, request official
+                                documents, and manage approvals instantly through a secure
+                                government platform.
+                            </p>
 
-            <!-- CTA -->
-            <div class="d-flex justify-content-between align-items-center mt-4">
-              <div>
-                <div class="text-muted small">
-                  Service Category
+                            <!-- CTA -->
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div>
+                                    <div class="text-muted small">
+                                        Service Category
+                                    </div>
+                                    <div class="service-price">
+                                        Citizens Services
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-warning service-cta">
+                                    Download App
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="service-price">
-                  Citizens Services
-                </div>
-              </div>
 
-              <button class="btn btn-warning service-cta">
-                Download App
-              </button>
             </div>
-
-          </div>
-
         </div>
-      </div>
-
     </div>
-  </div>
-</div>
 
 
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="js/script.js"></script>
     <script src="js/lang.js"></script>
-   
+
 </body>
+
 </html>

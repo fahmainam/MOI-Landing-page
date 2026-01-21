@@ -636,7 +636,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         messageInput.addEventListener('input', updateCounter);
-        messageInput.setAttribute('maxlength', maxLength);
+        messageInput.setAttribute('max_length', maxLength);
         updateCounter();
     }
 
@@ -982,3 +982,53 @@ const fadeInObserver = new IntersectionObserver(
   document.querySelectorAll('.fade-in-up').forEach(el => {
     fadeInUpObserver.observe(el);
   });
+
+  let currentLang = localStorage.getItem("lang") || "en";
+
+/* ============================= */
+/* APPLY LANGUAGE + CSS */
+/* ============================= */
+function applyLanguage(lang) {
+
+  // Update translated text
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const keys = el.dataset.i18n.split(".");
+    let value = translations[lang];
+    keys.forEach(k => value = value?.[k]);
+    if (value) el.textContent = value;
+  });
+
+  // Direction + lang
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+  // Switch stylesheet
+  const styleLink = document.getElementById("langStyle");
+  if (styleLink) {
+    styleLink.href = lang === "ar"
+      ? "css/style-ar.css"
+      : "css/style.css";
+  }
+
+  // 🔥 FIX: button label always updates
+  const langBtn = document.getElementById("langLabel");
+  if (langBtn) {
+    langBtn.textContent = lang === "ar" ? "EN" : "AR";
+  }
+
+  // Persist
+  localStorage.setItem("lang", lang);
+}
+
+/* ============================= */
+/* CLICK HANDLER (FIXED) */
+/* ============================= */
+document.getElementById("langLabel").addEventListener("click", () => {
+  currentLang = currentLang === "en" ? "ar" : "en";
+  applyLanguage(currentLang);
+});
+
+/* ============================= */
+/* INIT */
+/* ============================= */
+applyLanguage(currentLang);
