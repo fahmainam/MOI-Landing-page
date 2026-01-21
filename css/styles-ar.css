@@ -410,7 +410,9 @@ html {
     position: relative;
     z-index: 3;
 }
-
+.hero-content {
+   top: 201px!important;
+}
 .image-container {
     position: relative;
     max-width: 500px;
@@ -663,8 +665,16 @@ html {
     .image-container img {
         max-width: 300px;
     }
-}
+    .mobile-btn{
+       padding-top: 10px;
+    }
+    .hero-content { 
+    top: 201px!important;
 
+}
+.hero-image {
+    top: 231px!important;
+}
 /* Utility Classes */
 .text-white-50 {
     color: rgba(255, 255, 255, 0.7) !important;

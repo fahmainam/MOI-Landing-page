@@ -208,6 +208,11 @@ html {
       
     
 }
+  
+    .mobile-btn{
+       padding-top: 10px;
+    }
+
 }
 .text-gradient {
     background: linear-gradient(135deg, #fbbf24, #f59e0b);
@@ -474,6 +479,9 @@ html {
     .image-container img {
         max-width: 300px;
     }
+    .hero-content {
+   top: 201px!important;
+}
 }
 
 /* Utility Classes */

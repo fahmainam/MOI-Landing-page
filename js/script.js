@@ -1,4 +1,4 @@
-// Custom JavaScript for AI Vision Pro Landing Page
+// Custom JavaScript for Landing Page
 
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize page loader
@@ -1032,3 +1032,16 @@ document.getElementById("langLabel").addEventListener("click", () => {
 /* INIT */
 /* ============================= */
 applyLanguage(currentLang);
+
+
+// Collapse Navbar on Link Click (for mobile)
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbarNav");
+
+  navbar.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navbar.classList.remove("show");
+    });
+  });
+});
