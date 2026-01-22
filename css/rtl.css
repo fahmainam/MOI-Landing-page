@@ -120,9 +120,11 @@ html {
 .hero-content {
         top: 91px;
     z-index: 2;
+
 }
 .hero-content h1 {
     text-align: right!important;
+        padding-right: 71px;
 }
 /* =========================
    HERO VIDEO SECTION
@@ -495,7 +497,7 @@ html {
 
 /* Loading Animation */
 .page-loader {
-    position: fixed;
+    position: ed;
     top: 0;
     left: 0;
     width: 100%;
@@ -1707,6 +1709,50 @@ html {
     color: var(--primary-color);
     font-weight: 600;
 }
+/* =====================================================
+   FAQ ACCORDION ARROW ALIGN LEFT
+   ===================================================== */
+
+html[dir="rtl"] .faq-accordion .accordion-button {
+    text-align: right;
+    padding-right: 2rem;   /* text padding */
+    padding-left: 3.5rem;  /* space for arrow */
+}
+
+/* Force arrow to LEFT */
+html[dir="rtl"] .faq-accordion .accordion-button::after {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+
+    position: absolute;
+    left: 1.25rem;
+    right: auto;
+
+    background-position: center;
+}
+
+/* Expanded state (keep rotation correct) */
+html[dir="rtl"] .faq-accordion
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+
+/* icon spacing (question icon) */
+html[dir="rtl"] .faq-accordion .accordion-button i {
+    margin-left: 0.6rem;
+    margin-right: 0;
+}
+
+/* Body text RTL */
+html[dir="rtl"] .faq-accordion .accordion-body {
+    text-align: right;
+}
+
+/* Lists inside accordion */
+html[dir="rtl"] .faq-accordion .accordion-body ul {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
 
 /* FAQ CTA Section */
 .faq-cta {
@@ -2257,7 +2303,7 @@ html {
 /* custom form css */
 
 /* =====================================================
-   RTL FORM FIX — CONTACT FORM
+   RTL FORM  — CONTACT FORM
    ===================================================== */
 
 html[dir="rtl"] .contact-form {
@@ -2275,7 +2321,7 @@ html[dir="rtl"] .contact-form textarea {
 }
 
 /* ----------------------------------
-   PLACEHOLDER TEXT (CRITICAL FIX)
+   PLACEHOLDER TEXT (CRITICAL )
 ---------------------------------- */
 html[dir="rtl"] .contact-form .form-control::placeholder,
 html[dir="rtl"] .contact-form textarea::placeholder {
@@ -2306,7 +2352,7 @@ html[dir="rtl"] .contact-form
   transform: scale(0.85) translateY(-0.5rem) translateX(-0.15rem);
 }
 /* =====================================================
-   RTL FIX — SELECT DROPDOWN ARROW
+   RTL  — SELECT DROPDOWN ARROW
    ===================================================== */
 
 html[dir="rtl"] .form-select {
@@ -2331,7 +2377,7 @@ html[dir="rtl"] .contact-form select {
 }
 
 /* ----------------------------------
-   CHECKBOX RTL FIX
+   CHECKBOX RTL 
 ---------------------------------- */
 html[dir="rtl"] .contact-form .form-check {
   padding-right: 1.5em;
@@ -2366,6 +2412,8 @@ html[dir="rtl"] .contact-form button i {
 .contact-form .form-control.is-invalid,
 .contact-form .form-select.is-invalid {
     border-color: #ef4444;
+    left: 0!important;
+    float: left!important;
     background-color: rgba(239, 68, 68, 0.05);
     
 }
@@ -2387,6 +2435,43 @@ html[dir="rtl"] .contact-form button i {
     color: #10b981;
     font-size: 0.875rem;
     margin-top: 0.5rem;
+}
+/* =====================================================
+   RTL  — FORM VALIDATION (ARABIC)
+   ===================================================== */
+
+
+
+/* Invalid state */
+html[dir="rtl"] .contact-form .form-control.is-invalid,
+html[dir="rtl"] .contact-form .form-select.is-invalid {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.05);
+}
+
+/* Valid state */
+html[dir="rtl"] .contact-form .form-control.is-valid,
+html[dir="rtl"] .contact-form .form-select.is-valid {
+    border-color: #10b981;
+    background-color: rgba(16, 185, 129, 0.05);
+}
+
+/* Feedback messages align LEFT (as requested) */
+html[dir="rtl"] .contact-form .invalid-feedback,
+html[dir="rtl"] .contact-form .valid-feedback {
+    text-align: left;
+}
+
+
+
+/* When label floats */
+html[dir="rtl"] .contact-form
+.form-floating > .form-control:focus ~ label,
+html[dir="rtl"] .contact-form
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+html[dir="rtl"] .contact-form
+.form-floating > .form-select ~ label {
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 
 /* Loading State */
@@ -2711,12 +2796,15 @@ html[dir="rtl"] .contact-form button i {
 
 .newsletter-form .input-group {
     border-radius: 50px;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .newsletter-form .form-control {
     border: none;
+   
     padding: 0.875rem 1.25rem;
     background: rgba(255, 255, 255, 0.95);
     color: #1e293b;
@@ -2734,6 +2822,8 @@ html[dir="rtl"] .contact-form button i {
 
 .newsletter-form .btn {
     border: none;
+    border-top-right-radius: none!important;
+    border-bottom-right-radius: none!important;
     padding: 0.875rem 1.25rem;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     transition: all 0.3s ease;
@@ -2742,6 +2832,39 @@ html[dir="rtl"] .contact-form button i {
 .newsletter-form .btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+}
+/* =====================================================
+   NEWSLETTER FORM – INPUT GROUP (RTL)
+   ===================================================== */
+
+html[dir="rtl"] .newsletter-form .input-group {
+  direction: rtl;
+}
+
+/* INPUT */
+html[dir="rtl"] .newsletter-form .form-control {
+  border-radius: 0 999px 999px 0;   /* round only RIGHT side */
+  border-left: none;               /* remove inner border */
+  text-align: right;
+  padding-right: 1.25rem;
+}
+
+/* BUTTON */
+html[dir="rtl"] .newsletter-form .btn {
+  border-radius: 999px 0 0 999px;  /* round only LEFT side */
+  margin: 0;
+}
+
+/* Remove focus overlap line */
+html[dir="rtl"] .newsletter-form .form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color, #dc3545);
+}
+
+/* Align arrow icon nicely */
+html[dir="rtl"] .newsletter-form .btn i {
+  margin: 0;
+  transform: rotate(180deg); /* optional – RTL arrow direction */
 }
 
 /* Social Media Links */
@@ -2861,7 +2984,7 @@ html[dir="rtl"] .contact-form button i {
 
 /* Back to Top Button */
 .back-to-top {
-    position: fixed;
+    position: ed;
     bottom: 30px;
     right: 30px;
     z-index: 1000;

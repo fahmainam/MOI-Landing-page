@@ -142,6 +142,7 @@ function initParallaxEffect() {
     heroSection.addEventListener('mousemove', function (e) {
         const mouseX = e.clientX / window.innerWidth;
         const mouseY = e.clientY / window.innerHeight;
+        
 
         floatingCards.forEach((card, index) => {
             const intensity = (index + 1) * 10;
@@ -438,8 +439,8 @@ document.addEventListener('DOMContentLoaded', function () {
 function initContactForm() {
     const contactForm = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
-    const btnText = submitBtn.querySelector('.btn-text');
-    const btnLoading = submitBtn.querySelector('.btn-loading');
+    // const btnText = submitBtn.querySelector('.btn-text');
+    // const btnLoading = submitBtn.querySelector('.btn-loading');
     const successAlert = document.querySelector('.contact-success');
 
     if (!contactForm) return;

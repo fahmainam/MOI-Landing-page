@@ -179,6 +179,11 @@ html {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   margin-bottom: 1rem;
+   padding-left: 32px;
+}
+.hero-content .lead {
+  padding-left: 32px;
+  text-align: left!important;
 }
 
 .hero-content p {
@@ -439,6 +444,7 @@ html {
 
     .hero-content h1 {
         font-size: 2.5rem;
+           
     }
 
     .floating-cards {
@@ -472,6 +478,7 @@ html {
 
     .hero-content .lead {
         font-size: 1.1rem;
+
     }
 
     .hero-stats .stat-item h3 {
@@ -498,7 +505,7 @@ html {
 
 /* Loading Animation */
 .page-loader {
-    position: fixed;
+    position: ed;
     top: 0;
     left: 0;
     width: 100%;
@@ -2752,7 +2759,7 @@ html {
 
 /* Back to Top Button */
 .back-to-top {
-    position: fixed;
+    position: ed;
     bottom: 30px;
     right: 30px;
     z-index: 1000;

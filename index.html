@@ -82,13 +82,13 @@
                         <h1 class="display-3 fw-bold text-white mb-4" data-i18n="hero.title">
                             Welcome to Metrash2
                         </h1>
-                        <p style="text-align: left !important;" class="lead text-white-50 mb-5 fs-5" data-i18n="hero.subtitle">
+                        <p  class="lead text-white-50 mb-5 fs-5" data-i18n="hero.subtitle">
                             Explore more than 224 services offered by the Ministry of Interior
                         </p>
                         <div class="hero-buttons animate-fade-in-delay-2">
                             <a href="#get-started" class="btn btn-primary btn-lg  me-3 mb-3"
                                 data-i18n="hero.ctaPrimary">
-                                <i class="bi bi-rocket-takeoff me-2"></i>Get Started Free
+                                <i class="bi bi-download me-2"></i>Download App
                             </a>
                             <a href="#learn-more" class="btn btn-outline-light btn-lg  mb-3"
                                 data-i18n="hero.ctaSecondary">
@@ -434,7 +434,7 @@
                             <h5 class="fw-semibold mb-2">Available on Google Play</h5>
 
                             <a href="#resources" class="btn btn-outline-primary">
-                                <i class="bi bi-file-earmark-text me-2"></i>Download App
+                                <i class="bi bi-download me-2"></i>Download App
                             </a>
                         </div>
                     </div>
@@ -446,7 +446,7 @@
                             <h5 class="fw-huawei mb-2">Available on app Gallery</h5>
 
                             <a href="#get-started" class="btn btn-primary">
-                                <i class="bi bi-arrow-right me-2"></i>Download App
+                                <i class="bi bi-download me-2"></i>Download App
                             </a>
                         </div>
                     </div>
@@ -685,13 +685,15 @@
     <!-- CTA -->
     <div class="faq-cta text-center mt-5">
       <div class="cta-content">
-        <h4 class="fw-bold text-white mb-3">Still need assistance?</h4>
+        <h1 class="fw-bold text-white mb-3">Contact Us</h1>
+        <h3>For support and inquiries, please contact</h3>
         <p class="text-white mb-4">
           The Ministry of Interior support team is ready to help you with Metrash2 services.
         </p>
         <a href="#contact" class="btn btn-primary btn-lg">
-          <i class="bi bi-telephone me-2"></i>Contact Support
+          <i class="bi bi-telephone me-2"></i>2342000
         </a>
+        <h4>helpdesk@moi.gov.qa</h4>
       </div>
     </div>
 
@@ -700,230 +702,7 @@
 
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section py-5">
-        <div class="container">
-            <!-- Section Header -->
-            <div class="text-center mb-5">
-                <span class="badge bg-primary-soft text-primary mb-3">Get In Touch</span>
-                <h2 class="display-5 fw-bold text-dark mb-4">
-                    Ready to Transform Your Business?
-                    <span class="text-primary">Let's Talk</span>
-                </h2>
-                <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                    Have questions about Metrash2 in-app? Want to see a personalized demo?
-                    Our team of AI experts is here to help you get started.
-                </p>
-            </div>
-
-            <div class="row g-5">
-                <!-- Contact Form -->
-                <div class="col-lg-12">
-                    <div class="contact-form-container">
-                        <div class="contact-form-header mb-4">
-                            <h3 class="fw-bold text-dark mb-2">Send Us a Message</h3>
-                            <p class="text-muted">Fill out the form below and we'll get back to you within 24 hours.</p>
-                        </div>
-
-                        <form class="contact-form" id="contactForm" novalidate>
-                            <div class="row g-3">
-                                <!-- Name Field -->
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="contactName" placeholder="Your Name"
-                                            required>
-                                        <label for="contactName">
-                                            <i class="bi bi-person me-2"></i>Full Name *
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            Please provide your full name.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Email Field -->
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="contactEmail"
-                                            placeholder="your@email.com" required>
-                                        <label for="contactEmail">
-                                            <i class="bi bi-envelope me-2"></i>Email Address *
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            Please provide a valid email address.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Company Field -->
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="contactCompany"
-                                            placeholder="Company Name">
-                                        <label for="contactCompany">
-                                            <i class="bi bi-building me-2"></i>Company Name
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <!-- Phone Field -->
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control" id="contactPhone"
-                                            placeholder="Phone Number">
-                                        <label for="contactPhone">
-                                            <i class="bi bi-telephone me-2"></i>Phone Number
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <!-- Subject Field -->
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="contactSubject" required>
-                                            <option value="">Choose a subject...</option>
-                                            <option value="general">General Inquiry</option>
-                                            <option value="demo">Request a Demo</option>
-                                            <option value="pricing">Pricing Information</option>
-                                            <option value="support">Technical Support</option>
-                                            <option value="partnership">Partnership Opportunities</option>
-                                            <option value="custom">Custom Implementation</option>
-                                        </select>
-                                       
-                                        <div class="invalid-feedback">
-                                            Please select a subject.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Message Field -->
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="contactMessage" placeholder="Your message..."
-                                            style="height: 150px" required></textarea>
-                                        <label for="contactMessage">
-                                            <i class="bi bi-chat-text me-2"></i>Message *
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            Please provide a message.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Privacy Checkbox -->
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="privacyConsent" required>
-                                        <label class="form-check-label text-muted" for="privacyConsent">
-                                            I agree to the <a href="#privacy" class="text-primary">Privacy Policy</a>
-                                            and consent to being contacted by the Metrash2 in-app team. *
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            You must agree to the privacy policy.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Submit Button -->
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
-                                        <i class="bi bi-send me-2"></i>
-                                        <span class="btn-text">Send Message</span>
-                                        <span class="btn-loading d-none">
-                                            <span class="spinner-border spinner-border-sm me-2" role="status"></span>
-                                            Sending...
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-
-                        <!-- Success Message -->
-                        <div class="alert alert-success contact-success d-none" role="alert">
-                            <i class="bi bi-check-circle me-2"></i>
-                            <strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you
-                            within 24 hours.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Information -->
-               
-            </div>
-
-            <!-- Contact Cards -->
-            <div class="contact-cards row my-5">
-                <!-- Phone -->
-                <div class="col-sm-12 col-lg-3">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="bi bi-telephone-fill text-primary"></i>
-                        </div>
-                        <div class="contact-card-content">
-                            <h5 class="fw-semibold mb-1">Call Us</h5>
-                            <p class="text-muted mb-2">Speak with our sales team</p>
-                            <a href="tel:+974-MOI Doha Qatar" class="contact-link">
-                                +974 MOI Doha Qatar
-                            </a>
-                            <small class="text-muted d-block">Mon-Fri, 9am-6pm PST</small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Email -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="bi bi-envelope-fill text-primary"></i>
-                        </div>
-                        <div class="contact-card-content">
-                            <h5 class="fw-semibold mb-1">Email Us</h5>
-                            <p class="text-muted mb-2">Send us an email anytime</p>
-                            <a href="mailto:help@moidohaqatar" class="contact-link">
-                                help@moidohaqatar
-                            </a>
-                            <small class="text-muted d-block">We respond within 4 hours</small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Address -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="bi bi-geo-alt-fill text-primary"></i>
-                        </div>
-                        <div class="contact-card-content">
-                            <h5 class="fw-semibold mb-1">Visit Us</h5>
-                            <p class="text-muted mb-1">Our headquarters</p>
-                            <address class="contact-address mb-0">
-                                Ministry of Interior, 
-                                Duhail, Doha, 
-                                Qatar
-                            </address>
-                        </div>
-                    </div>
-                </div>
-                <!-- Live Chat -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="bi bi-chat-dots-fill text-primary"></i>
-                        </div>
-                        <div class="contact-card-content">
-                            <h5 class="fw-semibold mb-1">Live Chat</h5>
-                            <p class="text-muted mb-4">Chat with our support team</p>
-                            <button class="btn btn-outline-primary btn-sm" onclick="openLiveChat()">
-                                <i class="bi bi-chat me-1"></i>Start Chat
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
+ 
 
 
 
@@ -1000,7 +779,7 @@ enabling citizens and residents to complete their transactions efficiently via M
                             <div class="footer-contact">
                                 <div class="contact-item mb-2">
                                     <i class="bi bi-envelope me-2"></i>
-                                    <a href="mailto:help@moidohaqatar">help@moidohaqatar</a>
+                                    <a href="mailto:helpdesk@moi.gov.qa">helpdesk@moi.gov.qa</a>
                                 </div>
                                 <div class="contact-item mb-2">
                                     <i class="bi bi-telephone me-2"></i>
@@ -1049,7 +828,7 @@ enabling citizens and residents to complete their transactions efficiently via M
                     <div class="col-md-6">
                         <div class="footer-copyright">
                             <p class="mb-0">
-                                &copy; 2025 <strong>Metrash2 in-app</strong>. All rights reserved.
+                                 2026 &copy; <strong>Metrash2 in-app</strong>. All rights reserved.
                             </p>
                         </div>
                     </div>
