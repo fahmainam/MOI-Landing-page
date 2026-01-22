@@ -12,7 +12,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet" id="langStylesheet">
-    <link rel="preload" href="css/style-ar.css" as="style">
+   
     <!-- i18next JS -->
 </head>
 
@@ -82,7 +82,7 @@
                         <h1 class="display-3 fw-bold text-white mb-4" data-i18n="hero.title">
                             Welcome to Metrash2
                         </h1>
-                        <p class="lead text-white-50 mb-5 fs-5" data-i18n="hero.subtitle">
+                        <p style="text-align: left !important;" class="lead text-white-50 mb-5 fs-5" data-i18n="hero.subtitle">
                             Explore more than 224 services offered by the Ministry of Interior
                         </p>
                         <div class="hero-buttons animate-fade-in-delay-2">
@@ -718,7 +718,7 @@
 
             <div class="row g-5">
                 <!-- Contact Form -->
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="contact-form-container">
                         <div class="contact-form-header mb-4">
                             <h3 class="fw-bold text-dark mb-2">Send Us a Message</h3>
@@ -789,9 +789,7 @@
                                             <option value="partnership">Partnership Opportunities</option>
                                             <option value="custom">Custom Implementation</option>
                                         </select>
-                                        <label for="contactSubject">
-                                            <i class="bi bi-chat-dots me-2"></i>Subject *
-                                        </label>
+                                       
                                         <div class="invalid-feedback">
                                             Please select a subject.
                                         </div>
@@ -850,57 +848,13 @@
                 </div>
 
                 <!-- Contact Information -->
-                <div class="col-lg-4">
-                    <div class="contact-info">
-                        <div class="contact-info-header mb-4">
-                            <h3 class="fw-bold text-dark mb-2">Get In Touch</h3>
-                            <p class="text-muted">Reach out to us directly through any of these channels.</p>
-                        </div>
-                        <!-- Support Hours -->
-                        <div class="support-hours mt-4">
-                            <h6 class="fw-semibold text-dark mb-3">Support Hours</h6>
-                            <div class="hours-list">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span class="text-muted">Monday - Friday</span>
-                                    <span class="fw-medium">9:00 AM - 6:00 PM PST</span>
-                                </div>
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span class="text-muted">Saturday</span>
-                                    <span class="fw-medium">10:00 AM - 4:00 PM PST</span>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <span class="text-muted">Sunday</span>
-                                    <span class="fw-medium">Closed</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Social Links -->
-                        <div class="social-links mt-4 d-block">
-                            <h6 class="fw-semibold text-dark">Follow Us</h6>
-                            <div class="social-buttons">
-                                <a href="#" class="social-btn">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                                <a href="#" class="social-btn">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <a href="#" class="social-btn">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="#" class="social-btn">
-                                    <i class="bi bi-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
 
             <!-- Contact Cards -->
             <div class="contact-cards row my-5">
                 <!-- Phone -->
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-12 col-lg-3">
                     <div class="contact-card">
                         <div class="contact-card-icon">
                             <i class="bi bi-telephone-fill text-primary"></i>
@@ -998,6 +952,50 @@ enabling citizens and residents to complete their transactions efficiently via M
 
                             </p>
 
+                            
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h6 class="footer-title">Quick Links</h6>
+                            <ul class="footer-nav">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#activate">Activate</a></li>
+                                <li><a href="#two-mobile-activate">Two mobile Activate</a></li>
+                                <li><a href="#download">Download</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                   
+ <!-- Follow Us -->
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!-- Social Media Links -->
+                              <div class="footer-links">
+                                <h6 class="footer-title mb-3">Follow Us</h6>
+                                <div class="social-links">
+                                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                </div>
+                                
+                            </div>
                             <!-- Contact Info -->
                             <div class="footer-contact">
                                 <div class="contact-item mb-2">
@@ -1013,53 +1011,8 @@ enabling citizens and residents to complete their transactions efficiently via M
                                     <span>MOI Duhail, Doha, Qatar</span>
                                 </div>
                             </div>
-                        </div>
                     </div>
-
-                    <!-- Quick Links -->
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="footer-links">
-                            <h6 class="footer-title">Quick Links</h6>
-                            <ul class="footer-nav">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#features">Features</a></li>
-                                <li><a href="#pricing">Pricing</a></li>
-                                <li><a href="#faq">FAQ</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Product -->
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="footer-links">
-                            <h6 class="footer-title">Product</h6>
-                            <ul class="footer-nav">
-                                <li><a href="#features">Smart Analytics</a></li>
-                                <li><a href="#features">Computer Vision</a></li>
-                                <li><a href="#features">NLP Engine</a></li>
-                                <li><a href="#demo">Live Demo</a></li>
-                                <li><a href="#api">API Docs</a></li>
-                                <li><a href="#integrations">Integrations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Resources -->
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="footer-links">
-                            <h6 class="footer-title">Resources</h6>
-                            <ul class="footer-nav">
-                                <li><a href="#blog">Blog</a></li>
-                                <li><a href="#case-studies">Case Studies</a></li>
-                                <li><a href="#whitepapers">Whitepapers</a></li>
-                                <li><a href="#webinars">Webinars</a></li>
-                                <li><a href="#help">Help Center</a></li>
-                                <li><a href="#community">Community</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                   
 
                     <!-- Newsletter & Social -->
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -1079,29 +1032,11 @@ enabling citizens and residents to complete their transactions efficiently via M
                                 </div>
                             </form>
 
-                            <!-- Social Media Links -->
-                            <div class="footer-social mt-4">
-                                <h6 class="social-title mb-3">Follow Us</h6>
-                                <div class="social-links">
-                                    <a href="#" class="social-link facebook" aria-label="Facebook">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                    <a href="#" class="social-link twitter" aria-label="Twitter">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="social-link instagram" aria-label="Instagram">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                    <a href="#" class="social-link youtube" aria-label="YouTube">
-                                        <i class="bi bi-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
+
+                    
                 </div>
             </div>
 
@@ -1326,7 +1261,7 @@ enabling citizens and residents to complete their transactions efficiently via M
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-    <script src="js/lang.js"></script>
+   
 
 </body>
 
